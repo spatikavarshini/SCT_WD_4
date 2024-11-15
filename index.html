@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <h1>📝 Task Planner</h1>
+                <p>Keep track of your tasks in style</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <div class="todo-box">
+                    <h2>Create Your Tasks</h2>
+                    <form id="todo-form" class="todo-form">
+                        <div class="form-group">
+                            <input type="text" id="todo-input" placeholder="Enter a task" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="datetime-local" id="due-date" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Task</button>
+                    </form>
+                </div>
+
+                <div class="todo-box">
+                    <h2>Your Tasks</h2>
+                    <ul id="todo-list" class="todo-list"></ul>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>Task Planner &copy; 2024 - Manage tasks beautifully!</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
